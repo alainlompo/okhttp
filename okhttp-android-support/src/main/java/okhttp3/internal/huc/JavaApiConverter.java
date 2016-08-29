@@ -642,12 +642,6 @@ public final class JavaApiConverter {
     }
 
     @Override
-    public boolean getInstanceFollowRedirects() {
-      // Return the platform default.
-      return super.getInstanceFollowRedirects();
-    }
-
-    @Override
     public void setRequestMethod(String method) throws ProtocolException {
       throw throwRequestModificationException();
     }
@@ -823,11 +817,6 @@ public final class JavaApiConverter {
     @Override
     public boolean getDefaultUseCaches() {
       return super.getDefaultUseCaches();
-    }
-
-    @Override
-    public void setDefaultUseCaches(boolean defaultUseCaches) {
-      super.setDefaultUseCaches(defaultUseCaches);
     }
   }
 
