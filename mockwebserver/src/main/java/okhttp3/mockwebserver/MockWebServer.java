@@ -391,7 +391,7 @@ public final class MockWebServer implements TestRule {
 
     // Await shutdown.
     try {
-      if (!executor.awaitTermination(5, TimeUnit.SECONDS)) {
+      if (!executor.awaitTermination(5, SECONDS)) {
         throw new IOException("Gave up waiting for executor to shut down");
       }
     } catch (InterruptedException e) {
